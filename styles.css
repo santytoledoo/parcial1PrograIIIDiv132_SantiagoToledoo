@@ -1,0 +1,232 @@
+/* =========================
+   GENERAL
+========================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* header principal de la pagina */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 25px;
+}
+
+/* acomoda los elementos dentro del header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* estilo del titulo principal */
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* parte del medio con el nombre y la barra de busqueda */
+.centro-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* muestra el nombre del alumno */
+#nombreAlumno {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* campo donde se escribe para buscar frutas */
+#barraBusqueda {
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+}
+
+/* contador de productos en el header */
+#contadorHeader {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* seccion donde se muestran los productos */
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* boton rojo para eliminar productos */
+.boton-eliminar {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* efecto hover del boton eliminar */
+.boton-eliminar:hover {
+  background-color: #cc0000;
+}
+
+/* botones para ordenar los productos */
+#botonesOrden {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* estilo de los botones de orden */
+#botonesOrden button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+/* efecto al pasar el mouse por los botones de orden */
+#botonesOrden button:hover {
+  background-color: #3e8e41;
+}
+
+/* contenedor de todas las frutas */
+#contenedorFrutas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+/* diseño de cada tarjeta de fruta */
+.card-producto {
+  background-color: white;
+  width: 180px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* agranda la tarjeta un poco al pasar el mouse */
+.card-producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* imagen de la fruta dentro de la tarjeta */
+.card-producto img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* nombre de la fruta dentro de la tarjeta */
+.card-producto h3 {
+  text-transform: lowercase;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* precio de la fruta dentro de la tarjeta */
+.card-producto p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* boton para agregar al carrito */
+.card-producto button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* efecto hover del boton agregar */
+.card-producto button:hover {
+  background-color: #3e8e41;
+}
+
+/* seccion del carrito con fondo gris */
+#carrito {
+  background-color: #e0e0e0;
+  padding: 30px 0;
+  margin-top: 40px;
+  width: 100%;
+  border-top: 2px solid #ddd;
+}
+
+/* titulo del carrito */
+#carrito h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* lista donde aparecen los productos del carrito */
+#contenedorCarrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* cada item dentro del carrito */
+.bloque-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* parte de abajo del carrito con el total y el boton de vaciar */
+.carrito-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+/* boton para vaciar todo el carrito */
+.vaciar-btn {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+/* efecto hover del boton vaciar */
+.vaciar-btn:hover {
+  background-color: #cc0000;
+}
+
+/* texto que muestra el total del carrito */
+.total-carrito {
+  text-align: right;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}

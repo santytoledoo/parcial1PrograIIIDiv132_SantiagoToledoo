@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <title>Frutería</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Frutería "Los Toledo"</h1>
+
+      <div class="centro-header">
+        <p id="nombreAlumno">Santiago Toledo</p>
+        <input id="barraBusqueda" type="text" placeholder="Buscar..." />
+      </div>
+
+      <p id="contadorHeader">Carrito: 0 Productos</p>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nuestras frutas deliciosas</h2>
+
+    <div id="botonesOrden">
+      <button onclick="ordenarPorNombre()">Ordenar por Nombre</button>
+      <button onclick="ordenarPorPrecio()">Ordenar por Precio</button>
+    </div>
+
+    <section id="contenedorFrutas"></section>
+
+    <section id="carrito">
+      <h2>Carrito</h2>
+      <div id="contenedorCarrito"></div>
+    </section>
+  </main>
+
+</body>
+</html>
